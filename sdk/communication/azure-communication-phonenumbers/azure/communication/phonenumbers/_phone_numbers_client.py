@@ -29,14 +29,16 @@ if TYPE_CHECKING:
     from azure.core.credentials import TokenCredential, AzureKeyCredential
     from azure.core.paging import ItemPaged
     from azure.core.polling import LROPoller
-    from ._generated.models import (
+    from models.models import (
         PhoneNumberCapabilities,
+        PurchasedPhoneNumber,
+    )
+    from ._generated.models import (
         PhoneNumberCapabilityType,
         PhoneNumberCountry,
         PhoneNumberOffering,
         PhoneNumberLocality,
         PhoneNumberSearchResult,
-        PurchasedPhoneNumber,
     )
 
 PhoneNumberSearchType = Union[
